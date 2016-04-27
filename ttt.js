@@ -5,8 +5,8 @@ $(document).on('ready', function () {
   function checkWinner() {
     for(var i = 0; i < winningCombos.length; i++) {
       var combo = winningCombos[i];
-      
-      if (($('.x').hasClass(combo[0]) && $('.x').hasClass(combo[1]) && $('.x').hasClass(combo[2])) {
+
+      if (($('.x').hasClass(combo[0]) || $('.x').hasClass(combo[1]) || $('.x').hasClass(combo[2])) 
       // combo will be [1,2,3]
       // compare each combo to a playerState array or use the DOM => $('.x')
       alert("We have a winner!");
